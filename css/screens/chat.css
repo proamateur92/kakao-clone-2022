@@ -227,6 +227,7 @@
   border: none;
   border-radius: 50%;
   background-color: var(--yellow);
+  color: #2e363e;
   left: 79%;
 }
 
