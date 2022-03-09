@@ -1,0 +1,48 @@
+#friends-display-link {
+  display: block;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 15px;
+  transition: all 300ms ease-in;
+}
+
+#friends-display-link > i {
+  margin: 5px;
+  color: #d5d5d5;
+}
+
+#friends-display-link:hover {
+  background-color: var(--yellow);
+}
+
+#friends-display-link:hover > * {
+  color: white;
+}
+
+[class*='angle']:hover {
+  transform: scale(1.5);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: var(--yellow);
+  font-size: 60px;
+  animation: hideSplashScreen 500ms ease-in-out forwards;
+  animation-delay: 400ms;
+}

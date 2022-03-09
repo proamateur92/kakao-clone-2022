@@ -1,0 +1,257 @@
+#chat-screen {
+  background-color: #aac1d1;
+  height: 120vh;
+}
+
+#chat-screen .status-bar {
+  background-color: #aac1d1;
+  padding-bottom: 10px;
+  z-index: 2;
+}
+
+#chat-screen .alt-header {
+  position: fixed;
+  margin-top: 13px;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  background-color: #aac1d1;
+}
+
+.main-chat {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.chat__timestamp {
+  padding: 8px 6px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  font-weight: 100px;
+  border-radius: 15px;
+  animation: flow 2000ms linear infinite;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-5%);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: fadeInLeft 500ms ease-in forwards;
+}
+
+.message-row:first-of-type {
+  animation-delay: 600ms;
+}
+
+.message-row:nth-of-type(2) {
+  animation-delay: 1200ms;
+}
+
+.message-row:nth-of-type(3) {
+  animation-delay: 1800ms;
+}
+
+.message-row:nth-of-type(4) {
+  animation-delay: 2400ms;
+}
+
+.message-row:last-of-type {
+  animation-delay: 3000ms;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 21px;
+  margin-right: var(--horizontal-space);
+  transition: all 300ms ease-in;
+}
+
+.message-row img:hover {
+  transform: scale(1.1);
+}
+
+.message-row__content {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.message__user-name {
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 6px;
+}
+
+.message__detail {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  padding: 12px 14px;
+  background-color: white;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.message__timestamp {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+  animation: fadeInRight 500ms ease-in forwards;
+}
+
+.message-row--own .message__detail {
+  flex-direction: row-reverse;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-radius: 15px;
+  border-top-right-radius: 0;
+}
+
+.message-row--own .message__timestamp {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.reply-frm {
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  background-color: white;
+  transition: all 300ms ease-in;
+}
+
+.reply-frm__input {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 10px 10px;
+  padding: 15px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background-color: white;
+  transition: all 300ms ease-in;
+}
+
+.reply-frm input {
+  width: 75%;
+  font-size: 22px;
+  border: none;
+  background-color: white;
+}
+
+.reply-frm__column:first-child {
+  color: rgba(0, 0, 0, 0.5);
+  width: 10%;
+}
+
+.reply-frm__column:first-child i {
+  font-size: 35px;
+  transition: all 300ms ease-in;
+}
+
+.reply-frm__column:last-child {
+  width: 90%;
+}
+
+.reply-frm__input i,
+.reply-frm__input button {
+  position: absolute;
+}
+
+.reply-frm__input input + i {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 2px;
+  left: 70%;
+}
+
+.reply-frm__column button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  left: 79%;
+}
+
+.reply-frm:focus-within {
+  transform: translateY(70px);
+}
+
+.reply-frm:focus-within .reply-frm__input {
+  width: 85vw;
+  transform: translateX(-15%) translateY(-70px);
+}
+
+.reply-frm:focus-within .reply-frm__input input {
+  width: 90vw;
+}
+
+.reply-frm .reply-frm__column:first-child,
+.reply-frm .fa-face-grin-beam,
+.reply-frm .reply-frm__input button {
+  transition: opacity 300ms ease-in-out;
+}
+
+.reply-frm:focus-within .reply-frm__column:first-child,
+.reply-frm:focus-within .fa-face-grin-beam,
+.reply-frm:focus-within .reply-frm__input button {
+  visibility: hidden;
+  opacity: 0;
+}
