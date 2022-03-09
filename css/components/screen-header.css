@@ -1,0 +1,43 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin: var(--horizontal-space);
+}
+
+.screen-header__title {
+  font-size: var(--font-large);
+  font-weight: var(--font-bold);
+}
+
+.screen-header__icons > a {
+  margin-left: 20px;
+}
+
+.screen-header__link:first-child > i {
+  position: relative;
+}
+
+.screen-header__link {
+  position: relative;
+  transition: all 300ms ease-in;
+}
+
+@keyframes turn {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__link > i:hover {
+  color: var(--yellow);
+  animation: turn 1s linear infinite;
+}
+
+.screen-header__dot {
+  margin-left: 22px;
+  margin-top: -8px;
+}

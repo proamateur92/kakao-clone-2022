@@ -1,0 +1,44 @@
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.status-bar__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.status-bar__text {
+  margin-right: 3px;
+}
+
+.status-bar__item {
+  width: 33%;
+}
+
+.status-bar__item:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__item:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fa-wifi,
+.fa-battery-half {
+  margin: 0 5px;
+}
+
+.fa-battery-half,
+.fa-bolt {
+  margin-top: 3px;
+}

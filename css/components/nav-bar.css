@@ -1,0 +1,93 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 14px 0;
+  transition: all 300ms ease-in;
+}
+
+.nav:hover {
+  background-color: var(--yellow);
+  border: none;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav__list {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list:nth-of-type(2),
+.nav__list:last-of-type {
+  position: relative;
+}
+
+.nav__link > i {
+  transition: all 300ms ease-in;
+}
+
+.nav__link > i:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.nav__dot {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: -15px;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transoform: none;
+  }
+  50% {
+    transform: translateY(-3px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__notification {
+  position: absolute;
+  margin-top: -6px;
+  margin-left: -7px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav__list {
+  transform: translateY(40px);
+  animation: appearBtnAnimation 700ms ease-in-out forwards;
+}
+
+.nav__list:nth-child(2) {
+  animation-delay: 500ms;
+}
+
+.nav__list:nth-child(3) {
+  animation-delay: 1000ms;
+}
+
+.nav__list:last-child {
+  animation-delay: 1500ms;
+}
