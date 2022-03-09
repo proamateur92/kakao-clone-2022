@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends KakaoTalk</title>
+    <script src="https://kit.fontawesome.com/c1651245ed.js" crossorigin="anonymous"></script>
+  <body>
+    <div class="status-bar">
+      <ul class="status-bar__list">
+        <li class="status-bar__item">
+          <span class="status-bar__text">No Service</span>
+          <i class="fa-solid fa-wifi fa-sm"></i>
+        </li>
+        <li class="status-bar__item">
+          <span class="status-bar__text">16:54</span>
+        </li>
+        <li class="status-bar__item">
+          <span class="status-bar__text">54%</span>
+          <i class="fa-solid fa-battery-half fa-lg"></i>
+          <i class="fa-solid fa-bolt fa-xs"></i>
+        </li>
+      </ul>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <a href="./find.html" class="screen-header__link">
+          <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </a>
+        <a href="./settings.html" class="screen-header__link">
+          <span class="screen-header__dot dot"></span>
+          <i class="fa-solid fa-gear fa-xl"></i>
+        </a>
+      </div>
+    </header>
+    <main class="main-screen">
+      <div class="icon-row">
+        <a href="#" class="icon-row__link">
+          <i class="fas fa-qrcode fa-2xl"></i>
+        QR Code
+        </a>
+        <a href="#" class="icon-row__link">
+          <i class="fas fa-address-book fa-2xl"></i>
+          Add by <br/>Contacts
+        </a>
+        <a href="#" class="icon-row__link">
+          <i class="fas fa-fingerprint fa-2xl"></i>
+          Add by ID
+        </a>
+        <a href="#" class="icon-row__link">
+          <i class="far fa-envelope fa-2xl"></i>
+          Invite
+        </a>
+      </div>
+      <div class="main-screen__line">
+        <div class="main-screen__line-header">
+          <span>Recommended Friends</span>
+        </div>
+      </div>
+      <span id="friend-view">You have no recommended friends.</span>
+      <div class="main-screen__line">
+        <div class="main-screen__line-header">
+          <span>Open Chat</span>
+          <div class="main-screen__text">
+            <a href="./chat.html" class="main-sceen__link">
+              Go to Openchat Home
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main-screen__line">
+        <div class="open-channel">
+          <div class="open-channel__info">
+            <div class="open-channel__title">#BTS</div>
+            <div class="open-channel__subtitle">#BTS #ARMY #FRIENDS</div>
+            <div class="open-channel__detail">
+              <img src="https://avatars.githubusercontent.com/u/68406448?v=4" alt="" class="open-channel__avatar">
+              <span class="open-channel__members-number">802 members</span>
+              <div class="divider"></div>
+              <span class="open-channel__isActive">Active</span>
+            </div>
+          </div>
+          <div class="open-channel__image">
+            <img src="https://mblogthumb-phinf.pstatic.net/MjAyMDAyMTNfMjYg/MDAxNTgxNTk3NzEyMzIw.eYaS4jqyatJClf8Vkbtrk8TZ8Tvp3_hq8cyqMORu990g.8r303lHJC7vpjlQ3siLNKp4Y0VW33wlbOVO6KRC2lsYg.JPEG.bitandboot/BTS_%EC%BB%B4%EB%B0%B1,_%EB%B9%97%EC%95%A4%EB%B6%93_001.jpg?type=w800" alt="" class="open-channel__thumbnail">
+            <div class="opench-channel__heart">
+              <i class="fa-solid fa-heart"></i>
+              <span>326</span>    
+            </div>
+          </div>
+        </div>
+        <div class="main-screen__line-header">
+        </div>
+        <div class="open-channel">
+          <div class="open-channel__info">
+            <div class="open-channel__title">Bts Gang~</div>
+            <div class="open-channel__subtitle">#englishonly #ipurpleyou #jimin #taeta...</div>
+            <div class="open-channel__detail">
+              <img src="https://cdn.pixabay.com/photo/2019/03/18/04/53/bird-4062359_1280.jpg" alt="" >
+              <span class="open-channel__members-number">299 members</span>
+              <div class="divider"></div>
+              <span class="open-channel__isActive">Active</span>
+            </div>
+          </div>
+          <div class="open-channel__image">
+            <img src="http://newsimg.hankookilbo.com/2019/03/14/201903141421769564_4.jpg" alt="" >
+            <div class="opench-channel__heart">
+              <i class="fa-solid fa-heart"></i>
+              <span>215</span>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__item">
+        <li class="nav__list">
+          <a href="./friends.html" class="nav__link">
+            <i class="fa-solid fa-user fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__list">
+          <a href="./chats.html" class="nav__link">
+            <i class="fa-regular fa-comment fa-xl"></i>
+            <span class="nav__notification badge">1</span>  
+          </a>
+        </li>
+        <li class="nav__list">
+          <a href="./find.html" class="nav__link">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__list">
+          <span class="nav__dot dot"></span>
+          <a href="./more.html" class="nav__link">
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>your screen is too big</span>
+    </div>
+  </body>
+</html>

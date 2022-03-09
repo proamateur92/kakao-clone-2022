@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends KakaoTalk</title>
+    <script src="https://kit.fontawesome.com/c1651245ed.js" crossorigin="anonymous"></script>
+  <body>
+    <div class="status-bar">
+      <ul class="status-bar__list">
+        <li class="status-bar__item">
+          <span class="status-bar__text">No Service</span>
+          <i class="fa-solid fa-wifi fa-sm"></i>
+        </li>
+        <li class="status-bar__item">
+          <span class="status-bar__text">16:54</span>
+        </li>
+        <li class="status-bar__item">
+          <span class="status-bar__text">54%</span>
+          <i class="fa-solid fa-battery-half fa-lg"></i>
+          <i class="fa-solid fa-bolt fa-xs"></i>
+        </li>
+      </ul>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+          <a href="./find.html" class="screen-header__link">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
+          <a href="#" class="screen-header__link">
+            <i class="fa-solid fa-music fa-xl"></i>
+          </a>
+          <a href="./settings.html" class="screen-header__link">
+            <i class="fa-solid fa-gear fa-xl"></i>
+          </a>
+        </div>
+    </header>
+    <a href="./find.html" id="friends-display-link">
+      <i class="fa-solid fa-circle-info"></i>
+      <span>
+        Friend's Dongbok Display
+      </span>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+            <img src="https://avatars.githubusercontent.com/u/68406448?v=4" alt="" class="user-component__avatar user-component__avatar--sm">
+            <div class="user-component__text">
+              <h1 class="user-component__title">Dongbok</h1>
+            </div>
+        </div>
+        <div class="user-component__column">
+        </div>
+      </div>
+      <div class="main-screen__line">
+        <div class="main-screen__line-header">
+          <span>Channel</span>
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+      </div>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="../../screenshots/channel-icon.png" alt="" class="user-component__avatar user-component__avatar--sm">
+          <div class="user-component__text">
+            <h1 class="user-component__title">Channel</h1>              
+          </div>
+        </div>
+        <div class="user-component__column">
+          <div>
+            <span class="user-component__number">2</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__item">
+        <li class="nav__list">
+          <a href="./friends.html" class="nav__link">
+            <i class="fa-solid fa-user fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__list">
+          <a href="./chats.html" class="nav__link">
+            <i class="fa-regular fa-comment fa-xl"></i>
+            <span class="nav__notification badge">1</span>  
+          </a>
+        </li>
+        <li class="nav__list">
+          <a href="./find.html" class="nav__link">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__list">
+          <span class="nav__dot"></span>
+          <a href="./more.html" class="nav__link">
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="splash-screen">
+      <i class="fa-solid fa-comment fa-xl"></i>
+    </div>
+    <div id="no-mobile">
+      <span>your screen is too big</span>
+    </div>
+  </body>
+</html>

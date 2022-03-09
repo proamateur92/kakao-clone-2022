@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KakaoTalk</title>
+    <script src="https://kit.fontawesome.com/c1651245ed.js" crossorigin="anonymous"></script>
+  <body>
+    <div class="status-bar">
+      <ul class="status-bar__list">
+        <li class="status-bar__item">
+          <span class="status-bar__text">No Service</span>
+          <i class="fa-solid fa-wifi fa-sm"></i>
+        </li>
+        <li class="status-bar__item">
+          <span class="status-bar__text">16:54</span>
+        </li>
+        <li class="status-bar__item">
+          <span class="status-bar__text">54%</span>
+          <i class="fa-solid fa-battery-half fa-lg"></i>
+          <i class="fa-solid fa-bolt fa-xs"></i>
+        </li>
+      </ul>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
+      <p class="welcome-header__description">If you have a Kakao Account, <br/> log in with your email or phone number.</p>
+    </header>
+    <section class="section">
+      <form action="friends.html" class="auth-form">
+        <input type="text" class="auth-form__id" placeholder="Email or phone number" />
+        <input type="text" class="auth-form__password" placeholder="Password" />
+        <input type="submit" class="auth-form__log-in" value="Log in" />
+        <input type="submit" class="auth-form__sign-up" value="Sign Up" />
+        <a href="#" class="auth-form__find-account-linl">Find Kakao Account or Password</a>
+      </form>
+    </section>
+    <div id="no-mobile">
+      <span>your screen is too big</span>
+    </div>
+  </body>
+</html>
